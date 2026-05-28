@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Logo Fundación Humanitaria Una Esperanza">
+  <title>Fundación Humanitaria Una Esperanza</title>
+  <defs>
+    <linearGradient id="greenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#66BB6A"/>
+      <stop offset="100%" stop-color="#2E7D32"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFD740"/>
+      <stop offset="100%" stop-color="#F6B800"/>
+    </linearGradient>
+  </defs>
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="96" fill="url(#greenGrad)"/>
+  <!-- Subtle inner ring -->
+  <circle cx="100" cy="100" r="88" stroke="white" stroke-width="1.5" stroke-opacity="0.18" fill="none"/>
+  <!-- Heart shape (white fill) -->
+  <path d="M100 144
+           C58 120 38 92 38 70
+           C38 50 52 38 68 42
+           C80 45 92 57 100 66
+           C108 57 120 45 132 42
+           C148 38 162 50 162 70
+           C162 92 142 120 100 144Z"
+        fill="white"/>
+  <!-- Green stem inside heart -->
+  <line x1="100" y1="66" x2="100" y2="108" stroke="#4CAF50" stroke-width="4" stroke-linecap="round"/>
+  <!-- Right leaf -->
+  <path d="M100 86 Q118 72 128 80 Q120 96 100 86Z" fill="#388E3C"/>
+  <!-- Left leaf -->
+  <path d="M100 100 Q82 86 72 94 Q80 110 100 100Z" fill="#2E7D32"/>
+  <!-- Golden bud at top of stem -->
+  <circle cx="100" cy="58" r="9" fill="url(#goldGrad)"/>
+  <circle cx="100" cy="58" r="4.5" fill="rgba(255,255,255,0.55)"/>
+</svg>

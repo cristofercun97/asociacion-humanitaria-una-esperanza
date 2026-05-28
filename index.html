@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="img/logo.png">
+  <title>Fundación Humanitaria Una Esperanza | Ayuda humanitaria y donaciones</title>
+  <meta name="description" content="Fundación Humanitaria Una Esperanza brinda apoyo a personas y familias vulnerables mediante alimentos, enseñanza, acompañamiento y acciones solidarias.">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#4CAF50">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Fundación Humanitaria Una Esperanza">
+  <meta property="og:description" content="Brindamos apoyo a personas y familias vulnerables mediante alimentos, enseñanza y acompañamiento solidario.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_ES">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@700;800&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="img/fa.png">
+  <link rel="apple-touch-icon" href="img/fa.png">
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ================================================================
+       HEADER
+  ================================================================= -->
+  <header class="header" id="header">
+    <div class="container header__container">
+
+      <a href="#inicio" class="header__logo" aria-label="Volver al inicio">
+        <img src="img/logo.png"
+             alt="Logo Fundación Humanitaria Una Esperanza"
+             class="header__logo-img"
+             width="44" height="44">
+        <span class="header__brand">
+          Fundación Humanitaria<br>
+          <strong>Una Esperanza</strong>
+        </span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Navegación principal">
+        <ul class="nav__list">
+          <li><a href="#inicio"        class="nav__link">Inicio</a></li>
+          <li><a href="#quienes-somos" class="nav__link">Quiénes somos</a></li>
+          <li><a href="#que-hacemos"   class="nav__link">Qué hacemos</a></li>
+          <li><a href="#donaciones"    class="nav__link">Donaciones</a></li>
+          <li><a href="#contacto"      class="nav__link">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__actions">
+        <a href="#donaciones"
+           class="btn btn--primary btn--sm">
+          Donar ahora
+        </a>
+        <button class="hamburger" id="hamburger"
+                aria-label="Abrir menú de navegación"
+                aria-expanded="false"
+                aria-controls="nav">
+          <span class="hamburger__line"></span>
+          <span class="hamburger__line"></span>
+          <span class="hamburger__line"></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+
+  <main id="main-content">
+
+    <!-- ================================================================
+         HERO
+    ================================================================= -->
+    <section class="hero" id="inicio" aria-label="Portada principal">
+
+      <div class="container hero__inner">
+
+        <!-- Columna izquierda: texto -->
+        <div class="hero__left">
+          <h1 class="hero__title">
+            Llevamos ayuda,
+            <span class="hero__title-accent">alimento y esperanza</span>
+            a quienes más lo necesitan
+          </h1>
+          <p class="hero__subtitle">
+            Somos una fundación humanitaria comprometida con apoyar a personas y familias en situación de vulnerabilidad mediante alimentos, acompañamiento, enseñanza y acciones solidarias.
+          </p>
+          <div class="hero__cta">
+            <a href="#donaciones"
+               class="btn btn--primary btn--lg">
+              <svg class="btn__icon" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"/>
+              </svg>
+              Hacer una donación
+            </a>
+            <a href="#que-hacemos" class="btn btn--outline btn--lg">
+              Conocer nuestra labor
+            </a>
+          </div>
+        </div>
+
+        <!-- Columna derecha: logo + nombre -->
+        <div class="hero__right">
+          <div class="hero__right-card">
+            <!-- Hoja decorativa -->
+            <div class="hero__leaf" aria-hidden="true">
+              <svg viewBox="0 0 80 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M40 110 C40 110 5 75 5 45 C5 18 20 5 40 5 C60 5 75 18 75 45 C75 75 40 110 40 110Z"
+                      fill="#C8E6C9" opacity="0.7"/>
+                <path d="M40 5 L40 110" stroke="#A5D6A7" stroke-width="1.5" stroke-dasharray="4 3"/>
+              </svg>
+            </div>
+            <img src="img/logo.png"
+                 alt="Logo Fundación Humanitaria Una Esperanza"
+                 class="hero__logo-img">
+            <p class="hero__brand-label">Fundación Humanitaria</p>
+            <p class="hero__brand-script">Una Esperanza</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ================================================================
+         QUIÉNES SOMOS
+    ================================================================= -->
+    <section class="section section--cream" id="quienes-somos">
+      <div class="container">
+
+        <div class="section__header">
+          <span class="eyebrow eyebrow--green">Sobre nosotros</span>
+          <h2 class="section__title">¿Quiénes somos?</h2>
+        </div>
+
+        <div class="about__grid">
+
+          <div class="about__text">
+            <p class="about__lead">
+              La Fundación Humanitaria Una Esperanza nace con el propósito de brindar apoyo real a quienes más lo necesitan.
+            </p>
+            <p>
+              Trabajamos con compromiso, empatía y solidaridad para ofrecer ayuda humanitaria a personas, familias y comunidades en situación de dificultad.
+            </p>
+            <p>
+              Nuestro objetivo es llevar esperanza donde más hace falta, acompañando con alimentos, orientación, formación y acciones solidarias.
+            </p>
+          </div>
+
+          <div class="values__stack">
+
+            <div class="value-card">
+              <div class="value-card__icon value-card__icon--green" aria-hidden="true">
+                <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M20 6C20 6 9 13 9 22C9 27.523 14.029 32 20 32C25.971 32 31 27.523 31 22C31 13 20 6 20 6Z" fill="#4CAF50" opacity="0.2"/>
+                  <path d="M14 22C14 22 15.5 27 20 27C24.5 27 26 22 26 22" stroke="#4CAF50" stroke-width="2" stroke-linecap="round"/>
+                  <path d="M12 18C12 14 15 10 20 10C25 10 28 14 28 18" stroke="#4CAF50" stroke-width="2" stroke-linecap="round" fill="none"/>
+                </svg>
+              </div>
+              <div class="value-card__body">
+                <h3 class="value-card__title">Solidaridad</h3>
+                <p class="value-card__text">Ayudamos sin condiciones, con el corazón abierto hacia quien más lo necesita.</p>
+              </div>
+            </div>
+
+            <div class="value-card">
+              <div class="value-card__icon value-card__icon--gold" aria-hidden="true">
+                <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="20" cy="20" r="13" fill="#F6B800" opacity="0.18"/>
+                  <circle cx="20" cy="20" r="12" stroke="#F6B800" stroke-width="2" fill="none"/>
+                  <path d="M13 20L18 25L27 15" stroke="#F6B800" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="value-card__body">
+                <h3 class="value-card__title">Compromiso</h3>
+                <p class="value-card__text">Actuamos con responsabilidad y dedicación en cada acción solidaria que emprendemos.</p>
+              </div>
+            </div>
+
+            <div class="value-card">
+              <div class="value-card__icon value-card__icon--blue" aria-hidden="true">
+                <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M20 6L23 14.5H32L25 19.5L27.5 28L20 23L12.5 28L15 19.5L8 14.5H17L20 6Z"
+                        fill="#1E88E5" opacity="0.18" stroke="#1E88E5" stroke-width="1.5" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="value-card__body">
+                <h3 class="value-card__title">Esperanza</h3>
+                <p class="value-card__text">Creemos en un futuro mejor para cada persona y familia a la que acompañamos.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ================================================================
+         QUÉ HACEMOS
+    ================================================================= -->
+    <section class="section" id="que-hacemos">
+      <div class="container">
+
+        <div class="section__header">
+          <span class="eyebrow eyebrow--green">Nuestras acciones</span>
+          <h2 class="section__title">Nuestra labor humanitaria</h2>
+        </div>
+
+        <div class="services__grid">
+
+          <article class="service-card">
+            <div class="service-card__icon service-card__icon--green" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 32 L10 22 C10 20 12 18 14 18 L34 18 C36 18 38 20 38 22 L38 32 C38 36 34 40 30 40 L18 40 C14 40 10 36 10 32Z"
+                      stroke="#4CAF50" stroke-width="2" fill="rgba(76,175,80,0.08)"/>
+                <path d="M18 18 L18 14 C18 12 20 10 22 10 L26 10 C28 10 30 12 30 14 L30 18"
+                      stroke="#4CAF50" stroke-width="2" stroke-linecap="round"/>
+                <path d="M19 28 L22 31 L29 24"
+                      stroke="#4CAF50" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3 class="service-card__title">Reparto de alimentos</h3>
+            <p class="service-card__text">Apoyamos a familias y personas vulnerables mediante la entrega de alimentos y productos básicos.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card__icon service-card__icon--gold" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24 38 C10 28 8 18 12 12 C15 7 21 7 24 12 C27 7 33 7 36 12 C40 18 38 28 24 38Z"
+                      fill="rgba(246,184,0,0.15)" stroke="#F6B800" stroke-width="2"/>
+                <path d="M18 24 L21 27 L30 18"
+                      stroke="#F6B800" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3 class="service-card__title">Ayuda humanitaria</h3>
+            <p class="service-card__text">Realizamos acciones solidarias para cubrir necesidades urgentes y acompañar a quienes atraviesan momentos difíciles.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card__icon service-card__icon--blue" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="8" y="14" width="32" height="26" rx="3"
+                      fill="rgba(30,136,229,0.08)" stroke="#1E88E5" stroke-width="2"/>
+                <path d="M8 22 L40 22" stroke="#1E88E5" stroke-width="1.5"/>
+                <path d="M16 18 L16 14" stroke="#1E88E5" stroke-width="2" stroke-linecap="round"/>
+                <path d="M32 18 L32 14" stroke="#1E88E5" stroke-width="2" stroke-linecap="round"/>
+                <path d="M15 30 L33 30" stroke="#1E88E5" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M15 35 L26 35" stroke="#1E88E5" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="service-card__title">Enseñanza y orientación</h3>
+            <p class="service-card__text">Impulsamos actividades de formación, enseñanza y acompañamiento para mejorar la calidad de vida de las personas.</p>
+          </article>
+
+          <article class="service-card">
+            <div class="service-card__icon service-card__icon--purple" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="18" cy="19" r="7" fill="rgba(142,68,173,0.1)" stroke="#8E44AD" stroke-width="2"/>
+                <circle cx="30" cy="19" r="7" fill="rgba(142,68,173,0.1)" stroke="#8E44AD" stroke-width="2"/>
+                <path d="M6 40 C6 33 11 28 18 28 L30 28 C37 28 42 33 42 40"
+                      stroke="#8E44AD" stroke-width="2" stroke-linecap="round" fill="none"/>
+              </svg>
+            </div>
+            <h3 class="service-card__title">Apoyo social</h3>
+            <p class="service-card__text">Escuchamos, orientamos y acompañamos a personas y familias que necesitan una mano amiga.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ================================================================
+         IMPACTO
+    ================================================================= -->
+    <section class="section section--impact" id="impacto" aria-label="Nuestro impacto">
+      <div class="container">
+
+        <div class="impact__header">
+          <h2 class="impact__title">Cada ayuda cuenta</h2>
+          <p class="impact__subtitle">
+            Una pequeña donación puede convertirse en alimento, apoyo y esperanza para alguien que lo necesita.
+          </p>
+        </div>
+
+        <div class="impact__pillars">
+
+          <div class="impact__pillar">
+            <div class="impact__pillar-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 18 C12 14 16 10 20 10 Q19 14 20 18" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+                <path d="M16 18 L16 38" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+                <path d="M26 10 L26 20 C26 22 28 24 30 24 C32 24 34 22 34 20 L34 10" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+                <path d="M30 24 L30 38" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="impact__pillar-title">Alimentos</h3>
+            <p class="impact__pillar-text">Entregamos alimentos básicos a personas y familias en situación de vulnerabilidad.</p>
+          </div>
+
+          <div class="impact__pillar">
+            <div class="impact__pillar-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 28 L10 22 C10 20 12 18 14 18 L18 18 L18 14 C18 12 20 10 22 10 C24 10 26 12 26 14 L26 24 L30 24 C32 24 34 26 34 28 L34 34 C34 38 30 42 26 42 L18 42 C14 42 10 38 10 34 Z"
+                      stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="rgba(255,255,255,0.1)"/>
+                <path d="M26 18 L30 18 C32 18 34 20 34 22" stroke="white" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="impact__pillar-title">Acompañamiento</h3>
+            <p class="impact__pillar-text">Estar presentes y escuchar activamente marca la diferencia en la vida de cada persona.</p>
+          </div>
+
+          <div class="impact__pillar">
+            <div class="impact__pillar-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24 8 L27.5 18 H38 L29.5 24 L33 34 L24 28 L15 34 L18.5 24 L10 18 H20.5 Z"
+                      stroke="white" stroke-width="2" fill="rgba(255,255,255,0.15)" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3 class="impact__pillar-title">Esperanza</h3>
+            <p class="impact__pillar-text">Ayudamos a ver que existe un camino hacia adelante, incluso en los momentos más difíciles.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ================================================================
+         DONACIONES
+    ================================================================= -->
+    <section class="don" id="donaciones" aria-labelledby="don-heading">
+      <div class="container">
+
+        <!-- Cabecera de sección -->
+        <div class="don__header">
+          <span class="eyebrow eyebrow--gold">Colabora con nosotros</span>
+          <h2 class="don__title" id="don-heading">Tu ayuda puede cambiar una vida</h2>
+          <p class="don__subtitle">
+            Realiza tu donación mediante transferencia bancaria y envíanos el comprobante
+            por WhatsApp para confirmar tu aporte.
+          </p>
+        </div>
+
+        <!-- Grid principal -->
+        <div class="don__grid">
+
+          <!-- ── Columna izquierda ── -->
+          <div class="don__col">
+
+            <!-- BLOQUE 1: Elige tu aportación -->
+            <div class="don__card don__card--amount">
+              <div class="don__card-head">
+                <span class="don__step-badge" aria-hidden="true">1</span>
+                <h3 class="don__card-title">Elige tu aportación</h3>
+              </div>
+
+              <div class="don__amounts" role="group" aria-label="Selecciona el importe de tu donación">
+                <button class="don__amt" data-amount="10"  type="button" aria-pressed="false">
+                  <svg class="don__amt-heart" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"/></svg>
+                  10 €
+                </button>
+                <button class="don__amt" data-amount="25"  type="button" aria-pressed="false">
+                  <svg class="don__amt-heart" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"/></svg>
+                  25 €
+                </button>
+                <button class="don__amt don__amt--active" data-amount="50" type="button" aria-pressed="true">
+                  <svg class="don__amt-heart" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"/></svg>
+                  50 €
+                </button>
+                <button class="don__amt" data-amount="100" type="button" aria-pressed="false">
+                  <svg class="don__amt-heart" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"/></svg>
+                  100 €
+                </button>
+                <button class="don__amt don__amt--other" data-amount="custom" type="button" aria-pressed="false">
+                  Otra cantidad
+                </button>
+              </div>
+
+              <div class="don__custom" id="don-custom-wrap" hidden>
+                <label for="don-custom-inp" class="don__custom-label">Introduce tu importe</label>
+                <div class="don__custom-field">
+                  <input type="number" id="don-custom-inp" class="don__custom-inp"
+                         min="1" placeholder="Ej. 30"
+                         aria-label="Cantidad personalizada en euros">
+                  <span class="don__custom-symbol" aria-hidden="true">€</span>
+                </div>
+              </div>
+
+              <p class="don__amt-note">
+                <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"/></svg>
+                Cada aportación, por pequeña que sea, ayuda a llevar alimento, apoyo y esperanza.
+              </p>
+            </div><!-- /bloque 1 -->
+
+            <!-- BLOQUE 2: Transferencia bancaria -->
+            <div class="don__card don__card--bank">
+              <div class="don__card-head">
+                <span class="don__step-badge" aria-hidden="true">2</span>
+                <h3 class="don__card-title">Transferencia bancaria</h3>
+              </div>
+              <p class="don__card-desc">
+                Realiza tu donación mediante transferencia bancaria a nuestra cuenta de Openbank.
+              </p>
+
+              <div class="don__bank-box">
+                <!-- Logo Openbank -->
+                <div class="don__bank-brand">
+                  <svg class="don__bank-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                    <rect x="2" y="7" width="20" height="14" rx="2"/>
+                    <path d="M16 11v4M8 11v4M12 11v4"/>
+                    <path d="M1 7l11-5 11 5"/>
+                  </svg>
+                  <div class="don__bank-brand-text">
+                    <span class="don__bank-name">Openbank</span>
+                    <span class="don__bank-sub">Grupo Santander</span>
+                  </div>
+                  <div class="don__bank-divider-v" aria-hidden="true"></div>
+                  <svg class="don__bank-icon don__bank-icon--transfer" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                    <rect x="2" y="5" width="20" height="14" rx="2"/>
+                    <path d="M2 10h20"/>
+                    <path d="M6 15h4"/>
+                  </svg>
+                  <span class="don__bank-transfer-label">Transferencia bancaria</span>
+                </div>
+
+                <div class="don__bank-row don__bank-row--iban">
+                  <span class="don__bank-label">IBAN</span>
+                  <div class="don__iban-wrap">
+                    <span class="don__iban" id="don-iban" aria-label="Número IBAN ES34 0073 0100 5505 0634 2514">
+                      ES34&nbsp;0073&nbsp;0100&nbsp;5505&nbsp;0634&nbsp;2514
+                    </span>
+                    <button class="don__copy-btn" id="don-copy-iban" type="button"
+                            aria-label="Copiar IBAN al portapapeles">
+                      <svg class="don__copy-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                        <rect x="9" y="9" width="13" height="13" rx="2"/>
+                        <path d="M5 15H4a2 2 0 01-2-2V4a2 2 0 012-2h9a2 2 0 012 2v1"/>
+                      </svg>
+                      <span class="don__copy-txt">Copiar IBAN</span>
+                    </button>
+                  </div>
+                </div>
+
+                <div class="don__bank-row">
+                  <span class="don__bank-label">Beneficiario</span>
+                  <span class="don__bank-value">Asociación Humanitaria Una Esperanza</span>
+                </div>
+
+                <div class="don__bank-row">
+                  <span class="don__bank-label">Concepto recomendado</span>
+                  <span class="don__bank-value">Donación Fundación Una Esperanza</span>
+                </div>
+              </div><!-- /bank-box -->
+
+              <p class="don__bank-security">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                </svg>
+                Tus datos están protegidos. Esta información se utiliza únicamente para gestionar tu donación.
+              </p>
+            </div><!-- /bloque 2 -->
+
+          </div><!-- /col-left -->
+
+          <!-- ── Columna derecha ── -->
+          <div class="don__col">
+
+            <!-- BLOQUE 3: Verificación por WhatsApp -->
+            <div class="don__card don__card--wa">
+              <div class="don__card-head">
+                <span class="don__step-badge don__step-badge--wa" aria-hidden="true">3</span>
+                <h3 class="don__card-title">Verifica tu donación por WhatsApp</h3>
+              </div>
+              <p class="don__card-desc">
+                Después de realizar la transferencia, envíanos el comprobante por WhatsApp
+                para poder confirmar tu aportación.
+              </p>
+              <p class="don__card-desc don__card-desc--sm">
+                Así podremos registrarla y mantener una gestión clara y transparente.
+              </p>
+
+              <div class="don__wa-icon-wrap" aria-hidden="true">
+                <svg class="don__wa-big" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                </svg>
+                <div class="don__wa-badge">
+                  <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                </div>
+              </div>
+
+              <a href="https://wa.me/34657611864?text=Hola%2C%20ya%20realic%C3%A9%20una%20donaci%C3%B3n%20a%20la%20Fundaci%C3%B3n%20Humanitaria%20Una%20Esperanza.%20Adjunto%20el%20comprobante%20de%20la%20transferencia."
+                 class="btn btn--whatsapp btn--lg don__wa-btn"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 aria-label="Enviar comprobante de transferencia por WhatsApp">
+                <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                </svg>
+                Enviar comprobante por WhatsApp
+              </a>
+
+              <p class="don__wa-note">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10"/><path d="M12 8v4m0 4h.01"/>
+                </svg>
+                Al abrir WhatsApp, adjunta la imagen o PDF del comprobante antes de enviar el mensaje.
+              </p>
+            </div><!-- /bloque 3 -->
+
+            <!-- Pasos visuales -->
+            <div class="don__card don__card--steps">
+              <h3 class="don__steps-title">¿Cómo hacerlo? Es muy fácil</h3>
+              <div class="don__steps" role="list">
+
+                <div class="don__step" role="listitem">
+                  <div class="don__step-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                      <rect x="2" y="7" width="20" height="14" rx="2"/>
+                      <path d="M16 11v4M8 11v4M12 11v4"/>
+                      <path d="M1 7l11-5 11 5"/>
+                    </svg>
+                  </div>
+                  <span class="don__step-num" aria-hidden="true">1</span>
+                  <p class="don__step-text">Realiza la<br>transferencia</p>
+                </div>
+
+                <div class="don__step-arrow" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M13 6l6 6-6 6"/>
+                  </svg>
+                </div>
+
+                <div class="don__step" role="listitem">
+                  <div class="don__step-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                      <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/>
+                      <polyline points="14 2 14 8 20 8"/>
+                      <line x1="16" y1="13" x2="8" y2="13"/>
+                      <line x1="16" y1="17" x2="8" y2="17"/>
+                      <polyline points="10 9 9 9 8 9"/>
+                    </svg>
+                  </div>
+                  <span class="don__step-num" aria-hidden="true">2</span>
+                  <p class="don__step-text">Guarda tu<br>comprobante</p>
+                </div>
+
+                <div class="don__step-arrow" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M13 6l6 6-6 6"/>
+                  </svg>
+                </div>
+
+                <div class="don__step" role="listitem">
+                  <div class="don__step-icon don__step-icon--wa" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                    </svg>
+                  </div>
+                  <span class="don__step-num" aria-hidden="true">3</span>
+                  <p class="don__step-text">Envíalo por<br>WhatsApp</p>
+                </div>
+
+              </div><!-- /steps -->
+              <p class="don__steps-note">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10"/><path d="M12 8v4m0 4h.01"/>
+                </svg>
+                Adjunta la imagen o PDF del comprobante antes de enviar el mensaje.
+              </p>
+            </div><!-- /pasos -->
+
+          </div><!-- /col-right -->
+        </div><!-- /grid -->
+
+        <!-- Badges de confianza -->
+        <div class="don__trust" role="list" aria-label="Garantías de transparencia">
+
+          <div class="don__trust-item" role="listitem">
+            <div class="don__trust-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+            </div>
+            <h4 class="don__trust-title">Transparencia</h4>
+            <p class="don__trust-text">Gestión clara de las donaciones recibidas.</p>
+          </div>
+
+          <div class="don__trust-item" role="listitem">
+            <div class="don__trust-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
+              </svg>
+            </div>
+            <h4 class="don__trust-title">Ayuda segura</h4>
+            <p class="don__trust-text">Tu donación llega directamente a la fundación.</p>
+          </div>
+
+          <div class="don__trust-item" role="listitem">
+            <div class="don__trust-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
+                <polyline points="22 4 12 14.01 9 11.01"/>
+              </svg>
+            </div>
+            <h4 class="don__trust-title">Confirmación manual</h4>
+            <p class="don__trust-text">Verificamos cada comprobante por WhatsApp.</p>
+          </div>
+
+        </div><!-- /trust -->
+
+      </div><!-- /container -->
+
+      <!-- Franja CTA final -->
+      <div class="don__cta-strip">
+        <div class="container">
+          <div class="don__cta-inner">
+            <div class="don__cta-text">
+              <h3 class="don__cta-title">Gracias por ser parte del cambio</h3>
+              <p class="don__cta-sub">Tu solidaridad se convierte en alimento, apoyo y esperanza para quienes más lo necesitan.</p>
+            </div>
+            <a href="https://wa.me/34657611864?text=Hola%2C%20ya%20realic%C3%A9%20una%20donaci%C3%B3n%20a%20la%20Fundaci%C3%B3n%20Humanitaria%20Una%20Esperanza.%20Adjunto%20el%20comprobante%20de%20la%20transferencia."
+               class="btn btn--whatsapp btn--lg don__cta-btn"
+               target="_blank"
+               rel="noopener noreferrer"
+               aria-label="Enviar comprobante de transferencia por WhatsApp">
+              <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+              </svg>
+              Enviar comprobante por WhatsApp
+            </a>
+          </div>
+        </div>
+      </div><!-- /cta-strip -->
+
+    </section>
+
+
+    <!-- ================================================================
+         TRANSPARENCIA
+    ================================================================= -->
+    <section class="section section--cream" id="transparencia">
+      <div class="container">
+
+        <div class="section__header">
+          <span class="eyebrow eyebrow--green">Datos oficiales</span>
+          <h2 class="section__title">Transparencia y confianza</h2>
+          <p class="section__subtitle">
+            Creemos en una ayuda humanitaria clara, cercana y responsable. Por eso ponemos a disposición los datos principales de nuestra asociación.
+          </p>
+        </div>
+
+        <div class="transparency__card">
+          <div class="transparency__grid">
+
+            <div class="transparency__item transparency__item--full">
+              <span class="transparency__label">Nombre legal</span>
+              <span class="transparency__value">Asociación Humanitaria Una Esperanza</span>
+            </div>
+
+            <div class="transparency__item">
+              <span class="transparency__label">CIF</span>
+              <span class="transparency__value">G42934703</span>
+            </div>
+
+            <div class="transparency__item">
+              <span class="transparency__label">Representante</span>
+              <span class="transparency__value">José Orlando Castaño Loaiza</span>
+            </div>
+
+            <div class="transparency__item">
+              <span class="transparency__label">Correo electrónico</span>
+              <a href="mailto:unaesperanza@gmail.com" class="transparency__value transparency__link">unaesperanza@gmail.com</a>
+            </div>
+
+            <div class="transparency__item">
+              <span class="transparency__label">Teléfono</span>
+              <a href="tel:+34657611864" class="transparency__value transparency__link">657 611 864</a>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ================================================================
+         CONTACTO
+    ================================================================= -->
+    <section class="section" id="contacto">
+      <div class="container">
+
+        <div class="section__header">
+          <span class="eyebrow eyebrow--green">Escríbenos</span>
+          <h2 class="section__title">Contacta con nosotros</h2>
+          <p class="section__subtitle">
+            Si quieres colaborar, donar, ofrecer ayuda o conocer más sobre nuestra labor, puedes escribirnos directamente.
+          </p>
+        </div>
+
+        <div class="contact__grid">
+
+          <div class="contact__actions">
+            <a href="https://wa.me/34657611864"
+               class="btn btn--whatsapp btn--lg"
+               target="_blank"
+               rel="noopener noreferrer">
+              <svg class="btn__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+              </svg>
+              Escribir por WhatsApp
+            </a>
+
+            <a href="mailto:unaesperanza@gmail.com" class="btn btn--outline btn--lg">
+              <svg class="btn__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+              Enviar correo
+            </a>
+          </div>
+
+          <div class="contact__info">
+            <div class="contact__info-item">
+              <svg class="contact__info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11.5 19.79 19.79 0 01.07 2.82 2 2 0 012.06 1h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 15.92"/>
+              </svg>
+              <div>
+                <span class="contact__info-label">Teléfono</span>
+                <a href="tel:+34657611864" class="contact__info-value">657 611 864</a>
+              </div>
+            </div>
+
+            <div class="contact__info-item">
+              <svg class="contact__info-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+              <div>
+                <span class="contact__info-label">Correo electrónico</span>
+                <a href="mailto:unaesperanza@gmail.com" class="contact__info-value">unaesperanza@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="contact__donate-reminder">
+              <p>¿Listo para ayudar?</p>
+              <a href="#donaciones"
+                 class="btn btn--primary btn--sm">
+                Donar ahora
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ================================================================
+       FOOTER
+  ================================================================= -->
+  <footer class="footer" id="footer" aria-label="Pie de página">
+    <div class="container">
+
+      <div class="footer__grid">
+
+        <div class="footer__brand">
+          <img src="img/logo.png"
+               alt="Logo Fundación Humanitaria Una Esperanza"
+               class="footer__logo"
+               width="56" height="56">
+          <p class="footer__name">Fundación Humanitaria<br><strong>Una Esperanza</strong></p>
+          <p class="footer__tagline">Llevando ayuda y esperanza a quienes más lo necesitan.</p>
+          <a href="#donaciones"
+             class="btn btn--primary btn--sm footer__cta">
+            Donar ahora
+          </a>
+        </div>
+
+        <nav class="footer__nav" aria-label="Navegación secundaria">
+          <h4 class="footer__nav-title">Secciones</h4>
+          <ul class="footer__nav-list">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#quienes-somos">Quiénes somos</a></li>
+            <li><a href="#que-hacemos">Qué hacemos</a></li>
+            <li><a href="#donaciones">Donaciones</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer__contact">
+          <h4 class="footer__nav-title">Contacto</h4>
+          <ul class="footer__contact-list">
+            <li>
+              <a href="tel:+34657611864">657 611 864</a>
+            </li>
+            <li>
+              <a href="mailto:unaesperanza@gmail.com">unaesperanza@gmail.com</a>
+            </li>
+          </ul>
+          <div class="footer__legal">
+            <p>Asociación Humanitaria Una Esperanza</p>
+            <p>CIF: G42934703</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; <span id="footer-year"></span> Fundación Humanitaria Una Esperanza. Todos los derechos reservados.</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
