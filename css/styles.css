@@ -824,6 +824,89 @@ ul { list-style: none; }
   border-color: rgba(246, 184, 0, 0.2);
 }
 
+.don__card--paypal {
+  border-color: rgba(0, 48, 135, 0.2);
+  background: #f5f8ff;
+}
+
+/* Badge PayPal */
+.don__step-badge--paypal {
+  background: #003087;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Botón PayPal */
+.don__paypal-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.625rem;
+  width: 100%;
+  padding: 0.9rem 1.5rem;
+  background: #003087;
+  color: #fff;
+  border-radius: var(--radius-full);
+  font-size: 1.0625rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  border: none;
+  text-decoration: none;
+  transition: background-color var(--transition), transform var(--transition), box-shadow var(--transition);
+  margin-bottom: 0.75rem;
+  white-space: nowrap;
+}
+
+.don__paypal-btn:hover {
+  background: #002069;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 48, 135, 0.3);
+}
+
+.don__paypal-btn:active {
+  transform: translateY(0);
+}
+
+.don__paypal-btn:focus-visible {
+  outline: 3px solid #009cde;
+  outline-offset: 3px;
+}
+
+/* Nota bajo el botón PayPal */
+.don__paypal-note {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+  justify-content: center;
+}
+
+.don__paypal-note svg {
+  color: #003087;
+  flex-shrink: 0;
+}
+
+/* Separador "o también puedes" */
+.don__or-divider {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: var(--text-muted);
+  font-size: 0.8125rem;
+  font-weight: 500;
+}
+
+.don__or-divider::before,
+.don__or-divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+}
+
+
 /* Cabecera de card */
 .don__card-head {
   display: flex;
@@ -2120,7 +2203,8 @@ ul { list-style: none; }
 
   /* Allow long button text to wrap so it doesn't overflow the card */
   .don__wa-btn,
-  .don__cta-btn {
+  .don__cta-btn,
+  .don__paypal-btn {
     white-space: normal;
     text-align: center;
     padding-inline: 1.25rem;
