@@ -824,6 +824,98 @@ ul { list-style: none; }
   border-color: rgba(246, 184, 0, 0.2);
 }
 
+/* ── Tarjeta Stripe ── */
+.don__card--stripe {
+  border-color: rgba(99, 91, 255, 0.25);
+  background: linear-gradient(135deg, #f8f7ff 0%, #fff 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.don__card--stripe::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #635bff, #7c6fee);
+  border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+}
+
+/* Badge Stripe */
+.don__step-badge--stripe {
+  background: #635bff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Botón Stripe "Donar ahora" */
+.don__stripe-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.625rem;
+  width: 100%;
+  padding: 1rem 1.5rem;
+  background: linear-gradient(135deg, #635bff 0%, #7c6fee 100%);
+  color: #fff;
+  border-radius: var(--radius-full);
+  font-size: 1.125rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  border: none;
+  text-decoration: none;
+  transition: transform var(--transition), box-shadow var(--transition), filter var(--transition);
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 16px rgba(99, 91, 255, 0.35);
+}
+
+.don__stripe-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(99, 91, 255, 0.45);
+  filter: brightness(1.07);
+}
+
+.don__stripe-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 12px rgba(99, 91, 255, 0.3);
+}
+
+.don__stripe-btn:focus-visible {
+  outline: 3px solid #635bff;
+  outline-offset: 3px;
+}
+
+/* Aviso de seguridad Stripe */
+.don__stripe-security {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  background: rgba(99, 91, 255, 0.05);
+  border: 1px solid rgba(99, 91, 255, 0.12);
+  border-radius: var(--radius-sm);
+  padding: 0.65rem 0.875rem;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  line-height: 1.55;
+}
+
+.don__stripe-security p {
+  margin: 0;
+}
+
+.don__stripe-security strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.don__stripe-lock {
+  color: #635bff;
+  flex-shrink: 0;
+  margin-top: 0.1rem;
+}
+
+/* ── Tarjeta PayPal ── */
 .don__card--paypal {
   border-color: rgba(0, 48, 135, 0.2);
   background: #f5f8ff;
@@ -2204,7 +2296,8 @@ ul { list-style: none; }
   /* Allow long button text to wrap so it doesn't overflow the card */
   .don__wa-btn,
   .don__cta-btn,
-  .don__paypal-btn {
+  .don__paypal-btn,
+  .don__stripe-btn {
     white-space: normal;
     text-align: center;
     padding-inline: 1.25rem;

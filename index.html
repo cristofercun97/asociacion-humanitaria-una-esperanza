@@ -349,7 +349,7 @@
           <span class="eyebrow eyebrow--gold">Colabora con nosotros</span>
           <h2 class="don__title" id="don-heading">Tu ayuda puede cambiar una vida</h2>
           <p class="don__subtitle">
-            Elige cómo quieres donar: con PayPal (rápido y seguro) o mediante transferencia bancaria enviando el comprobante por WhatsApp.
+            Elige cómo quieres donar: con tarjeta vía Stripe, con PayPal, o mediante transferencia bancaria.
           </p>
         </div>
 
@@ -403,6 +403,44 @@
                 Cada aportación, por pequeña que sea, ayuda a llevar alimento, apoyo y esperanza.
               </p>
             </div><!-- /bloque 1 -->
+
+            <!-- BLOQUE Stripe -->
+            <div class="don__card don__card--stripe">
+              <div class="don__card-head">
+                <span class="don__step-badge don__step-badge--stripe" aria-hidden="true">
+                  <!-- Stripe ‘S’ simplificado -->
+                  <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14" aria-hidden="true">
+                    <path d="M13.976 9.15c-2.172-.806-3.356-1.426-3.356-2.409 0-.831.683-1.305 1.901-1.305 2.227 0 4.515.858 6.09 1.631l.89-5.494C18.252.975 15.697 0 12.165 0 9.667 0 7.589.654 6.104 1.872 4.56 3.147 3.757 4.992 3.757 7.218c0 4.039 2.467 5.76 6.476 7.219 2.585.92 3.445 1.574 3.445 2.583 0 .98-.84 1.545-2.354 1.545-1.875 0-4.965-.921-6.99-2.109l-.9 5.555C5.175 22.99 8.385 24 11.714 24c2.641 0 4.843-.624 6.328-1.813 1.664-1.305 2.525-3.236 2.525-5.732 0-4.128-2.524-5.851-6.591-7.305z"/>
+                  </svg>
+                </span>
+                <h3 class="don__card-title">Donar con tarjeta</h3>
+              </div>
+              <p class="don__card-desc">
+                La forma más rápida. Paga con tarjeta de crédito o débito de forma inmediata y segura a través de Stripe.
+              </p>
+
+              <a href="https://buy.stripe.com/00w00c7IyaYB0sO6pw5Ne00"
+                 class="btn don__stripe-btn"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 aria-label="Donar ahora con tarjeta a través de Stripe, abre en nueva pestaña">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" width="20" height="20" aria-hidden="true">
+                  <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
+                </svg>
+                Donar ahora
+              </a>
+
+              <!-- Aviso de seguridad Stripe -->
+              <div class="don__stripe-security">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14" aria-hidden="true" class="don__stripe-lock">
+                  <rect x="3" y="11" width="18" height="11" rx="2"/>
+                  <path d="M7 11V7a5 5 0 0110 0v4"/>
+                </svg>
+                <p>
+                  <strong>Pago seguro con Stripe.</strong> La Asociación Humanitaria Una Esperanza no almacena ni tiene acceso a los datos de tu tarjeta. Toda la información de pago es procesada de forma segura por Stripe.
+                </p>
+              </div>
+            </div><!-- /bloque stripe -->
 
             <!-- BLOQUE PayPal -->
             <div class="don__card don__card--paypal">
