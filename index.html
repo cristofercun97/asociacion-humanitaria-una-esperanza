@@ -419,16 +419,36 @@
                 La forma más rápida. Paga con tarjeta de crédito o débito de forma inmediata y segura a través de Stripe.
               </p>
 
-              <a href="https://buy.stripe.com/00w00c7IyaYB0sO6pw5Ne00"
-                 class="btn don__stripe-btn"
-                 target="_blank"
-                 rel="noopener noreferrer"
-                 aria-label="Donar ahora con tarjeta a través de Stripe, abre en nueva pestaña">
+              <button id="don-stripe-btn" class="btn don__stripe-btn" type="button"
+                      aria-label="Donar ahora con tarjeta a través de Stripe">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" width="20" height="20" aria-hidden="true">
                   <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
                 </svg>
                 Donar ahora
-              </a>
+              </button>
+
+              <!-- Stripe Embedded Checkout — se monta aquí al pulsar el botón -->
+              <div id="stripe-checkout-container" class="don__stripe-checkout" hidden
+                   aria-label="Formulario de pago con tarjeta" aria-live="polite">
+                <div class="don__stripe-checkout-header">
+                  <span class="don__stripe-checkout-title">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                         width="16" height="16" aria-hidden="true">
+                      <rect x="3" y="11" width="18" height="11" rx="2"/>
+                      <path d="M7 11V7a5 5 0 0110 0v4"/>
+                    </svg>
+                    Completa tu donación
+                  </span>
+                  <button id="don-stripe-close" class="don__stripe-close" type="button"
+                          aria-label="Cerrar formulario de pago">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                         width="18" height="18" aria-hidden="true">
+                      <path d="M18 6L6 18M6 6l12 12"/>
+                    </svg>
+                  </button>
+                </div>
+                <div id="stripe-checkout"></div>
+              </div>
 
               <!-- Aviso de seguridad Stripe -->
               <div class="don__stripe-security">
@@ -443,6 +463,7 @@
             </div><!-- /bloque stripe -->
 
             <!-- BLOQUE PayPal -->
+            <!--
             <div class="don__card don__card--paypal">
               <div class="don__card-head">
                 <span class="don__step-badge don__step-badge--paypal" aria-hidden="true">
@@ -470,6 +491,7 @@
                 Pago 100 % seguro &middot; Tarjeta de crédito y débito aceptadas
               </p>
             </div><!-- /bloque paypal -->
+            -->
 
             <!-- Separador entre métodos -->
             <div class="don__or-divider" aria-hidden="true">
@@ -901,6 +923,18 @@
 
     </div>
   </footer>
+
+  <!-- Stripe.js — cargado de forma segura desde los servidores de Stripe -->
+  <script src="https://js.stripe.com/v3/"></script>
+
+  <!--
+    Stripe Publishable Key (clave pública — NO es la clave secreta).
+    Reemplaza el valor de abajo con tu clave publicable real antes de desplegar.
+    La clave secreta NUNCA debe ir aquí; se configura en variables de entorno de Vercel.
+  -->
+  <script>
+    window.STRIPE_PK = 'pk_live_51TdRvY3aJgEdU0rZSERJ60fmIPit5yq5aVr3nu8OU0sBkNnM8b7FMyDWCiW4UPJI0Iufn96xsuBgpxzWDB0bt4Zj00u5UJHNS0'
+  </script>
 
   <script src="js/main.js"></script>
 </body>

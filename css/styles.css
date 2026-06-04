@@ -915,6 +915,102 @@ ul { list-style: none; }
   margin-top: 0.1rem;
 }
 
+/* ── Stripe Embedded Checkout container ── */
+.don__stripe-checkout {
+  margin-top: 1.25rem;
+  border-top: 1px solid rgba(99, 91, 255, 0.18);
+  padding-top: 1.125rem;
+  animation: stripeCheckoutFadeIn 0.3s ease;
+}
+
+@keyframes stripeCheckoutFadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.don__stripe-checkout-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.don__stripe-checkout-title {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #635bff;
+}
+
+.don__stripe-close {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid rgba(99, 91, 255, 0.2);
+  border-radius: 50%;
+  background: transparent;
+  color: #888;
+  cursor: pointer;
+  transition: background var(--transition), color var(--transition), border-color var(--transition);
+  flex-shrink: 0;
+}
+
+.don__stripe-close:hover {
+  background: rgba(99, 91, 255, 0.08);
+  color: #635bff;
+  border-color: rgba(99, 91, 255, 0.4);
+}
+
+.don__stripe-close:focus-visible {
+  outline: 3px solid #635bff;
+  outline-offset: 2px;
+}
+
+#stripe-checkout {
+  min-height: 300px;
+}
+
+/* Error message inside checkout container */
+.don__stripe-checkout-error {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #fff5f5;
+  border: 1px solid #fecaca;
+  border-radius: var(--radius-sm);
+  padding: 0.875rem 1rem;
+  font-size: 0.875rem;
+  color: #c0392b;
+  margin: 0;
+}
+
+/* Button shake animation (no amount selected) */
+@keyframes stripeShake {
+  0%, 100% { transform: translateX(0); }
+  20%       { transform: translateX(-6px); }
+  40%       { transform: translateX(6px); }
+  60%       { transform: translateX(-4px); }
+  80%       { transform: translateX(4px); }
+}
+
+.don__stripe-btn--shake {
+  animation: stripeShake 0.55s ease;
+}
+
+/* Spinner inside button */
+@keyframes stripeSpin {
+  to { transform: rotate(360deg); }
+}
+
+.don__stripe-spinner {
+  animation: stripeSpin 0.8s linear infinite;
+  flex-shrink: 0;
+}
+
 /* ── Tarjeta PayPal ── */
 .don__card--paypal {
   border-color: rgba(0, 48, 135, 0.2);
